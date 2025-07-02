@@ -1,0 +1,28 @@
+{
+  "name": "simple-website",
+  "version": "1.0.0",
+  "description": "一个部署在Cloudflare Pages上的简易网站",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo '构建完成 - 静态网站无需构建步骤'",
+    "preview": "python -m http.server 8080"
+  },
+  "keywords": [
+    "website",
+    "cloudflare",
+    "static",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/simple-website.git"
+  },
+  "homepage": "https://your-site.pages.dev",
+  "devDependencies": {},
+  "dependencies": {}
+}

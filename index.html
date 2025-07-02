@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的简易网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>MyWebsite</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#about" class="nav-link">关于</a></li>
+                <li><a href="#services" class="nav-link">服务</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">欢迎来到我的网站</h1>
+                <p class="hero-subtitle">这是一个部署在Cloudflare上的简易网站示例</p>
+                <button class="cta-button" onclick="scrollToSection('about')">了解更多</button>
+            </div>
+            <div class="hero-animation">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">关于我们</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>这是一个使用现代Web技术构建的简易网站，展示了如何创建一个美观且响应式的网页。</p>
+                        <p>网站特点：</p>
+                        <ul>
+                            <li>响应式设计，适配各种设备</li>
+                            <li>现代化的UI设计</li>
+                            <li>流畅的动画效果</li>
+                            <li>优化的性能</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <span>🚀</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">我们的服务</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>网站开发</h3>
+                        <p>专业的网站开发服务，从设计到部署一站式解决方案。</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>移动应用</h3>
+                        <p>响应式设计确保在所有设备上都有完美的用户体验。</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">☁️</div>
+                        <h3>云端部署</h3>
+                        <p>使用Cloudflare等现代云服务，确保网站快速稳定运行。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">联系我们</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>contact@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span>+86 123 4567 8900</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>中国，北京</span>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="您的姓名" required>
+                        <input type="email" placeholder="您的邮箱" required>
+                        <textarea placeholder="您的消息" rows="5" required></textarea>
+                        <button type="submit">发送消息</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 MyWebsite. 部署在 Cloudflare Pages 上。</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

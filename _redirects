@@ -1,0 +1,10 @@
+# Cloudflare Pages 重定向配置
+
+# SPA 路由支持（如果需要的话）
+# /* /index.html 200
+
+# 强制 HTTPS
+http://your-domain.com/* https://your-domain.com/:splat 301!
+
+# 404 页面
+/404 /index.html 404
